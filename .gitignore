@@ -1,0 +1,6 @@
+# Executables
+/.vs
+
+# Directory
+/build
+/bin
