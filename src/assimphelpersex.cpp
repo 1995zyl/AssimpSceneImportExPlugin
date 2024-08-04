@@ -211,10 +211,10 @@ QImage TextureDataByStb::getStbTextureImage(const unsigned char* assimpTex, int 
 
 void TextureDataByStb::clearStbTextureData()
 {
-	//for (auto it = m_stbDataSets.begin(); m_stbDataSets.end() != it; ++it)
-	//{
-	//	stbi_image_free(*it);
-	//}
+	for (auto it = m_stbDataSets.begin(); m_stbDataSets.end() != it; ++it)
+	{
+		stbi_image_free(*it);
+	}
 	m_stbDataSets.clear();
 }
 
